@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81107D981F2416160035AA4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81107D971F2416160035AA4A /* LoginViewController.swift */; };
 		811BD8591EE37CC900774BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD8581EE37CC900774BEA /* AppDelegate.swift */; };
-		811BD85B1EE37CC900774BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD85A1EE37CC900774BEA /* ViewController.swift */; };
-		811BD85E1EE37CC900774BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811BD85C1EE37CC900774BEA /* Main.storyboard */; };
+		811BD85B1EE37CC900774BEA /* MoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD85A1EE37CC900774BEA /* MoodsViewController.swift */; };
 		811BD8601EE37CC900774BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 811BD85F1EE37CC900774BEA /* Assets.xcassets */; };
 		811BD8631EE37CC900774BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 811BD8611EE37CC900774BEA /* LaunchScreen.storyboard */; };
 		811BD86E1EE37CC900774BEA /* MoodSwingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD86D1EE37CC900774BEA /* MoodSwingsTests.swift */; };
 		811BD8791EE37CC900774BEA /* MoodSwingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD8781EE37CC900774BEA /* MoodSwingsUITests.swift */; };
+		811BD8891EE38AFC00774BEA /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD8881EE38AFC00774BEA /* ResultsViewController.swift */; };
+		81F020671F241D79004FACE5 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F020661F241D79004FACE5 /* FBSDKLoginKit.framework */; };
+		81F020691F2420B3004FACE5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */; };
+		81F649E71EE3B231002BA6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F649E61EE3B231002BA6AB /* Main.storyboard */; };
+		81F64A241EE48D4C002BA6AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F64A231EE48D4C002BA6AB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81107D971F2416160035AA4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		811BD8551EE37CC900774BEA /* MoodSwings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodSwings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811BD8581EE37CC900774BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		811BD85A1EE37CC900774BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		811BD85D1EE37CC900774BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		811BD85A1EE37CC900774BEA /* MoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodsViewController.swift; sourceTree = "<group>"; };
 		811BD85F1EE37CC900774BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		811BD8621EE37CC900774BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		811BD8641EE37CC900774BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		811BD8741EE37CC900774BEA /* MoodSwingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoodSwingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		811BD8781EE37CC900774BEA /* MoodSwingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodSwingsUITests.swift; sourceTree = "<group>"; };
 		811BD87A1EE37CC900774BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		811BD8881EE38AFC00774BEA /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		81F020661F241D79004FACE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		81F649E61EE3B231002BA6AB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		81F64A231EE48D4C002BA6AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F020671F241D79004FACE5 /* FBSDKLoginKit.framework in Frameworks */,
+				81F020691F2420B3004FACE5 /* FBSDKCoreKit.framework in Frameworks */,
+				81F64A241EE48D4C002BA6AB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				811BD86C1EE37CC900774BEA /* MoodSwingsTests */,
 				811BD8771EE37CC900774BEA /* MoodSwingsUITests */,
 				811BD8561EE37CC900774BEA /* Products */,
+				81F64A221EE48D4C002BA6AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,11 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				811BD8581EE37CC900774BEA /* AppDelegate.swift */,
-				811BD85A1EE37CC900774BEA /* ViewController.swift */,
-				811BD85C1EE37CC900774BEA /* Main.storyboard */,
+				811BD85A1EE37CC900774BEA /* MoodsViewController.swift */,
+				811BD8881EE38AFC00774BEA /* ResultsViewController.swift */,
 				811BD85F1EE37CC900774BEA /* Assets.xcassets */,
 				811BD8611EE37CC900774BEA /* LaunchScreen.storyboard */,
 				811BD8641EE37CC900774BEA /* Info.plist */,
+				81F649E61EE3B231002BA6AB /* Main.storyboard */,
+				81107D971F2416160035AA4A /* LoginViewController.swift */,
 			);
 			path = MoodSwings;
 			sourceTree = "<group>";
@@ -123,6 +139,16 @@
 				811BD87A1EE37CC900774BEA /* Info.plist */,
 			);
 			path = MoodSwingsUITests;
+			sourceTree = "<group>";
+		};
+		81F64A221EE48D4C002BA6AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */,
+				81F020661F241D79004FACE5 /* FBSDKLoginKit.framework */,
+				81F64A231EE48D4C002BA6AB /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81F649E71EE3B231002BA6AB /* Main.storyboard in Resources */,
 				811BD8631EE37CC900774BEA /* LaunchScreen.storyboard in Resources */,
 				811BD8601EE37CC900774BEA /* Assets.xcassets in Resources */,
-				811BD85E1EE37CC900774BEA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				811BD85B1EE37CC900774BEA /* ViewController.swift in Sources */,
+				81107D981F2416160035AA4A /* LoginViewController.swift in Sources */,
+				811BD85B1EE37CC900774BEA /* MoodsViewController.swift in Sources */,
 				811BD8591EE37CC900774BEA /* AppDelegate.swift in Sources */,
+				811BD8891EE38AFC00774BEA /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		811BD85C1EE37CC900774BEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				811BD85D1EE37CC900774BEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		811BD8611EE37CC900774BEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -393,6 +413,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/sandeephasrajani/Documents/FacebookSDK;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -414,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/sandeephasrajani/Documents/FacebookSDK;
 				INFOPLIST_FILE = MoodSwings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoseEmotions.MoodSwings;
@@ -507,6 +529,7 @@
 				811BD87F1EE37CC900774BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811BD8801EE37CC900774BEA /* Build configuration list for PBXNativeTarget "MoodSwingsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +538,7 @@
 				811BD8821EE37CC900774BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		811BD8831EE37CC900774BEA /* Build configuration list for PBXNativeTarget "MoodSwingsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +547,7 @@
 				811BD8851EE37CC900774BEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
