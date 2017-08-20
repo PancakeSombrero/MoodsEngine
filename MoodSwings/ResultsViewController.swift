@@ -27,7 +27,7 @@ class ResultsViewController: UIViewController, CLLocationManagerDelegate {
         print(userLocation.coordinate.latitude)
         print(userLocation.coordinate.longitude)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         moodTitle.text = self.moodTitleHolder
@@ -37,7 +37,4 @@ class ResultsViewController: UIViewController, CLLocationManagerDelegate {
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
     }
-    
-    
-
 }

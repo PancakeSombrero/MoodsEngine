@@ -16,6 +16,7 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     @IBOutlet weak var moodsCollectionView: UICollectionView!
     var jsonArray: [[Any]]!
     var moodTitleToSend = ""
+    var collectionViewSet = false
     
     func setCollectionView() {
         let collectionViewLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
@@ -31,11 +32,10 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
         moodsCollectionView.delegate = self
         moodsCollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "Cell")
         moodsCollectionView.backgroundColor = UIColor.white
-        //self.view.addSubview(collectionView)
+        self.collectionViewSet = true
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    func getMoods() {
         let sharedSession = URLSession.shared
         let url = URL(string: "http://www.wokeuponeday.com/Moods_Test.php")
         let urlRequest = URLRequest(url: url!)
@@ -45,7 +45,9 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
                     do {
                         if let jsonData = try JSONSerialization.jsonObject(with: moods, options: []) as? [[Any]] {
                             self.jsonArray = jsonData
-                            self.setCollectionView()
+                            if self.collectionViewSet == false {
+                                self.setCollectionView()
+                            }
                             print(self.jsonArray)
                             self.jsonArray.append(["Shuffle"])
                         }
@@ -56,6 +58,11 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             }
         }
         urlTask.resume()
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.getMoods()
     }
 
     override func didReceiveMemoryWarning() {
@@ -79,7 +86,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func buildCell(collectionView: UICollectionView, indexPath: IndexPath) -> UICollectionViewCell {
-        print("in build cell")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
         cell.backgroundColor = UIColor.orange
         let cellLabel = UILabel(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
@@ -95,15 +101,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        //        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath)
-        //        cell.backgroundColor = UIColor.orange
-        //        let cellLabel = UILabel(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
-        //        if let cellLabelText = self.jsonArray[indexPath.row][0] as? String {
-        //            cellLabel.text = cellLabelText
-        //            cellLabel.textAlignment = .center
-        //        }
-        //        cell.addSubview(cellLabel)
-        //        return cell
         return self.buildCell(collectionView: collectionView, indexPath: indexPath)
     }
     
@@ -150,15 +147,19 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             if moodTitle != "Shuffle" {
                 self.moodTitleToSend = moodTitle
             } else {
-                let filteredArray = self.jsonArray.joined().filter {$0 as! String != "Shuffle"}
-                let shuffledData = self.shuffleCollection(collection: filteredArray)
-                self.jsonArray = nil
-                for index in 0...shuffledData.count - 1 {
-                    shuffledJsonArray.append([shuffledData[index]])
-                }
-                print(shuffledJsonArray)
-                self.jsonArray = shuffledJsonArray
-                self.jsonArray.append(["Shuffle"])
+                // The code below will re-order your items in the collection view
+//                let filteredArray = self.jsonArray.joined().filter {$0 as! String != "Shuffle"}
+//                let shuffledData = self.shuffleCollection(collection: filteredArray)
+//                self.jsonArray = nil
+//                for index in 0...shuffledData.count - 1 {
+//                    shuffledJsonArray.append([shuffledData[index]])
+//                }
+//                print(shuffledJsonArray)
+//                self.jsonArray = shuffledJsonArray
+//                self.jsonArray.append(["Shuffle"])
+//                collectionView.reloadData()
+
+                self.getMoods()
                 collectionView.reloadData()
             }
             self.performSegue(withIdentifier: "resultsTransition", sender: self)
