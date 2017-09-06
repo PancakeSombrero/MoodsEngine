@@ -36,6 +36,7 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func getMoods() {
+        self.moodTitleToSend = ""
         let sharedSession = URLSession.shared
         let url = URL(string: "http://www.wokeuponeday.com/Moods_Test.php")
         let urlRequest = URLRequest(url: url!)
@@ -101,6 +102,7 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        print(self.jsonArray[indexPath.row][0])
         return self.buildCell(collectionView: collectionView, indexPath: indexPath)
     }
     
@@ -142,11 +144,31 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        var shuffledJsonArray = [[Any]]()
-        if let moodTitle = self.jsonArray[indexPath.row][0] as? String {
-            if moodTitle != "Shuffle" {
-                self.moodTitleToSend = moodTitle
-            } else {
+        print(indexPath.row)
+        if let cell = collectionView.cellForItem(at: indexPath) {
+            for view in cell.subviews {
+                if view is UILabel {
+                    let label = view as! UILabel
+                    let labelText = label.text!
+                    if labelText != "Shuffle" {
+                        self.moodTitleToSend = labelText
+                        self.performSegue(withIdentifier: "resultsTransition", sender: self)
+                    } else {
+                        self.getMoods()
+                        collectionView.reloadData()
+                    }
+                }
+            }
+            
+        }
+//        if let moodTitle = self.jsonArray[indexPath.row][0] as? String {
+//            if moodTitle != "Shuffle" {
+//                print("Mood Title:" + moodTitle)
+//                self.moodTitleToSend = moodTitle
+//                self.performSegue(withIdentifier: "resultsTransition", sender: self)
+//            } else {
+//                print("cell doesn't equal Shuffle")
+                // var shuffledJsonArray = [[Any]]()
                 // The code below will re-order your items in the collection view
 //                let filteredArray = self.jsonArray.joined().filter {$0 as! String != "Shuffle"}
 //                let shuffledData = self.shuffleCollection(collection: filteredArray)
@@ -158,12 +180,10 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
 //                self.jsonArray = shuffledJsonArray
 //                self.jsonArray.append(["Shuffle"])
 //                collectionView.reloadData()
-
-                self.getMoods()
-                collectionView.reloadData()
-            }
-            self.performSegue(withIdentifier: "resultsTransition", sender: self)
-        }
+//                self.getMoods()
+//                collectionView.reloadData()
+//            }
+//        }
     }
 }
 
