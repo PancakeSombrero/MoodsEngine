@@ -126,6 +126,9 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
         return  Array(duplicates.keys)
     }
     
+    @IBAction func reorderMoods(_ sender: Any) {
+        self.shuffleMoodPositions(collectionView: self.moodsCollectionView)
+    }
     
     func shuffleCollection(collection: Array<Any>) -> Array<Any> {
         var shuffledCollection: Array<Any> = collection
@@ -141,6 +144,19 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             }
         }
         return shuffledCollection
+    }
+    
+    func shuffleMoodPositions(collectionView: UICollectionView) {
+        var shuffledJsonArray = [[Any]]()
+        let filteredArray = self.jsonArray.joined().filter {$0 as! String != "Shuffle"}
+        let shuffledData = self.shuffleCollection(collection: filteredArray)
+        for index in 0...shuffledData.count - 1 {
+            shuffledJsonArray.append([shuffledData[index]])
+        }
+        self.jsonArray = shuffledJsonArray
+        self.jsonArray.append(["Shuffle"])
+        self.getMoods()
+        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
@@ -161,29 +177,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
             }
             
         }
-//        if let moodTitle = self.jsonArray[indexPath.row][0] as? String {
-//            if moodTitle != "Shuffle" {
-//                print("Mood Title:" + moodTitle)
-//                self.moodTitleToSend = moodTitle
-//                self.performSegue(withIdentifier: "resultsTransition", sender: self)
-//            } else {
-//                print("cell doesn't equal Shuffle")
-                // var shuffledJsonArray = [[Any]]()
-                // The code below will re-order your items in the collection view
-//                let filteredArray = self.jsonArray.joined().filter {$0 as! String != "Shuffle"}
-//                let shuffledData = self.shuffleCollection(collection: filteredArray)
-//                self.jsonArray = nil
-//                for index in 0...shuffledData.count - 1 {
-//                    shuffledJsonArray.append([shuffledData[index]])
-//                }
-//                print(shuffledJsonArray)
-//                self.jsonArray = shuffledJsonArray
-//                self.jsonArray.append(["Shuffle"])
-//                collectionView.reloadData()
-//                self.getMoods()
-//                collectionView.reloadData()
-//            }
-//        }
     }
 }
 
