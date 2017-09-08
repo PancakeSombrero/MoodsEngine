@@ -25,7 +25,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
 
         moodsCollectionView.collectionViewLayout = collectionViewLayout
         let customYPosition = self.view.frame.origin.y + logOut.frame.height + collectionViewLayout.sectionInset.top
-        print(customYPosition)
         let customFrame = CGRect.init(x: self.view.frame.origin.x, y: customYPosition, width: self.view.frame.width, height: self.view.frame.height)
         moodsCollectionView.frame = customFrame
         moodsCollectionView.dataSource = self
@@ -49,8 +48,10 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
                             if self.collectionViewSet == false {
                                 self.setCollectionView()
                             }
+                            print("new moods:")
                             print(self.jsonArray)
                             self.jsonArray.append(["Shuffle"])
+                            self.moodsCollectionView.reloadData()
                         }
                     } catch {
                         print("Issues parsing JSON")
@@ -102,7 +103,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print(self.jsonArray[indexPath.row][0])
         return self.buildCell(collectionView: collectionView, indexPath: indexPath)
     }
     
@@ -155,12 +155,12 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
         }
         self.jsonArray = shuffledJsonArray
         self.jsonArray.append(["Shuffle"])
-        self.getMoods()
+        print("shuffled positions: ")
+        print(self.jsonArray)
         collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.row)
         if let cell = collectionView.cellForItem(at: indexPath) {
             for view in cell.subviews {
                 if view is UILabel {
@@ -171,11 +171,9 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
                         self.performSegue(withIdentifier: "resultsTransition", sender: self)
                     } else {
                         self.getMoods()
-                        collectionView.reloadData()
                     }
                 }
             }
-            
         }
     }
 }
