@@ -48,8 +48,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
                             if self.collectionViewSet == false {
                                 self.setCollectionView()
                             }
-                            print("new moods:")
-                            print(self.jsonArray)
                             self.jsonArray.append(["Shuffle"])
                             self.moodsCollectionView.reloadData()
                         }
@@ -155,8 +153,6 @@ class MoodsViewController: UIViewController, UICollectionViewDelegateFlowLayout,
         }
         self.jsonArray = shuffledJsonArray
         self.jsonArray.append(["Shuffle"])
-        print("shuffled positions: ")
-        print(self.jsonArray)
         collectionView.reloadData()
     }
     
