@@ -1,0 +1,6 @@
+framework module Pods_MoodSwingsUITests {
+  umbrella header "Pods-MoodSwingsUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

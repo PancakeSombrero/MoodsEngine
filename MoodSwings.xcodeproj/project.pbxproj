@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3942CF6018DF7F572F24CD5B /* libPods-MoodSwings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61B31AF5640FEDB470CC53EB /* libPods-MoodSwings.a */; };
+		46822936A66A0379E85B4192 /* Pods_MoodSwingsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C05257B8002341CB4E950C /* Pods_MoodSwingsUITests.framework */; };
+		478FFAB4DDE0EAAA88D22F61 /* Pods_MoodSwingsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF71FC4177CCEA577D9E6B08 /* Pods_MoodSwingsTests.framework */; };
 		8108F1CF1F63263800126052 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 8108F1CE1F63263800126052 /* Podfile */; };
 		81107D981F2416160035AA4A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81107D971F2416160035AA4A /* LoginViewController.swift */; };
 		811BD8591EE37CC900774BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811BD8581EE37CC900774BEA /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 		81F020691F2420B3004FACE5 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */; };
 		81F649E71EE3B231002BA6AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F649E61EE3B231002BA6AB /* Main.storyboard */; };
 		81F64A241EE48D4C002BA6AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81F64A231EE48D4C002BA6AB /* CoreLocation.framework */; };
+		A6D6E5E98A6EFFF337745A6A /* Pods_MoodSwings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACA3B75E27AC6858C4E9E93 /* Pods_MoodSwings.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EDA4BA801925123BC196709 /* Pods-MoodSwings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings.debug.xcconfig"; sourceTree = "<group>"; };
-		61B31AF5640FEDB470CC53EB /* libPods-MoodSwings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoodSwings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8108F1CE1F63263800126052 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		116A2928CFB5DEA5BCE86FBA /* Pods-MoodSwings.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwings.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings.debug.xcconfig"; sourceTree = "<group>"; };
+		3ACA3B75E27AC6858C4E9E93 /* Pods_MoodSwings.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodSwings.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F8A4D9A02D1853E8A0BE2C7 /* Pods-MoodSwings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwings.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings.release.xcconfig"; sourceTree = "<group>"; };
+		6FB80842CBC0C43234E3DCC0 /* Pods-MoodSwingsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwingsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwingsUITests/Pods-MoodSwingsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8108F1CE1F63263800126052 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		81107D971F2416160035AA4A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		811BD8551EE37CC900774BEA /* MoodSwings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodSwings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		811BD8581EE37CC900774BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +66,11 @@
 		81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		81F649E61EE3B231002BA6AB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81F64A231EE48D4C002BA6AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		AB272499D09181283BC8E09E /* Pods-MoodSwings.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwings.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings.release.xcconfig"; sourceTree = "<group>"; };
+		8846F7E78C7EED6388A7A74C /* Pods-MoodSwingsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwingsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwingsUITests/Pods-MoodSwingsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		98C05257B8002341CB4E950C /* Pods_MoodSwingsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodSwingsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1054CC6CD3049B117FCFFA /* Pods-MoodSwingsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwingsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwingsTests/Pods-MoodSwingsTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF71FC4177CCEA577D9E6B08 /* Pods_MoodSwingsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodSwingsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F31BBD06D6D38B1C7C6191B8 /* Pods-MoodSwingsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodSwingsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoodSwingsTests/Pods-MoodSwingsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +81,7 @@
 				81F020671F241D79004FACE5 /* FBSDKLoginKit.framework in Frameworks */,
 				81F020691F2420B3004FACE5 /* FBSDKCoreKit.framework in Frameworks */,
 				81F64A241EE48D4C002BA6AB /* CoreLocation.framework in Frameworks */,
-				3942CF6018DF7F572F24CD5B /* libPods-MoodSwings.a in Frameworks */,
+				A6D6E5E98A6EFFF337745A6A /* Pods_MoodSwings.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				478FFAB4DDE0EAAA88D22F61 /* Pods_MoodSwingsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46822936A66A0379E85B4192 /* Pods_MoodSwingsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +113,7 @@
 				811BD8771EE37CC900774BEA /* MoodSwingsUITests */,
 				811BD8561EE37CC900774BEA /* Products */,
 				81F64A221EE48D4C002BA6AB /* Frameworks */,
-				FA942EC4D29E2DEDED4DF92C /* Pods */,
+				C17751CA1B4E324960DF84C7 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,16 +166,22 @@
 				81F020681F2420B3004FACE5 /* FBSDKCoreKit.framework */,
 				81F020661F241D79004FACE5 /* FBSDKLoginKit.framework */,
 				81F64A231EE48D4C002BA6AB /* CoreLocation.framework */,
-				61B31AF5640FEDB470CC53EB /* libPods-MoodSwings.a */,
+				3ACA3B75E27AC6858C4E9E93 /* Pods_MoodSwings.framework */,
+				EF71FC4177CCEA577D9E6B08 /* Pods_MoodSwingsTests.framework */,
+				98C05257B8002341CB4E950C /* Pods_MoodSwingsUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FA942EC4D29E2DEDED4DF92C /* Pods */ = {
+		C17751CA1B4E324960DF84C7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0EDA4BA801925123BC196709 /* Pods-MoodSwings.debug.xcconfig */,
-				AB272499D09181283BC8E09E /* Pods-MoodSwings.release.xcconfig */,
+				116A2928CFB5DEA5BCE86FBA /* Pods-MoodSwings.debug.xcconfig */,
+				4F8A4D9A02D1853E8A0BE2C7 /* Pods-MoodSwings.release.xcconfig */,
+				F31BBD06D6D38B1C7C6191B8 /* Pods-MoodSwingsTests.debug.xcconfig */,
+				DA1054CC6CD3049B117FCFFA /* Pods-MoodSwingsTests.release.xcconfig */,
+				8846F7E78C7EED6388A7A74C /* Pods-MoodSwingsUITests.debug.xcconfig */,
+				6FB80842CBC0C43234E3DCC0 /* Pods-MoodSwingsUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -177,12 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811BD87D1EE37CC900774BEA /* Build configuration list for PBXNativeTarget "MoodSwings" */;
 			buildPhases = (
-				4CA470381AE23C863B24AD39 /* [CP] Check Pods Manifest.lock */,
+				FDB7F78DF48C422923FA9549 /* [CP] Check Pods Manifest.lock */,
 				811BD8511EE37CC900774BEA /* Sources */,
 				811BD8521EE37CC900774BEA /* Frameworks */,
 				811BD8531EE37CC900774BEA /* Resources */,
-				D04FBA1813A37619C46C88D7 /* [CP] Embed Pods Frameworks */,
-				AE1F848F162EC79C701E0C5B /* [CP] Copy Pods Resources */,
+				131D58EF0A436602C2841673 /* [CP] Embed Pods Frameworks */,
+				68D9E8542D1DC9D9A2B94430 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811BD8801EE37CC900774BEA /* Build configuration list for PBXNativeTarget "MoodSwingsTests" */;
 			buildPhases = (
+				6BE4A625269086D42CA3C020 /* [CP] Check Pods Manifest.lock */,
 				811BD8651EE37CC900774BEA /* Sources */,
 				811BD8661EE37CC900774BEA /* Frameworks */,
 				811BD8671EE37CC900774BEA /* Resources */,
+				FFD625AA86AE424C842F36A2 /* [CP] Embed Pods Frameworks */,
+				5EB695C48D4FA56BFE985328 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 811BD8831EE37CC900774BEA /* Build configuration list for PBXNativeTarget "MoodSwingsUITests" */;
 			buildPhases = (
+				CCA9F8FB379E62A2C81E9284 /* [CP] Check Pods Manifest.lock */,
 				811BD8701EE37CC900774BEA /* Sources */,
 				811BD8711EE37CC900774BEA /* Frameworks */,
 				811BD8721EE37CC900774BEA /* Resources */,
+				BA6443891DE000DE1CEB2CBA /* [CP] Embed Pods Frameworks */,
+				8517EC7469464C283BE4A2F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,25 +326,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4CA470381AE23C863B24AD39 /* [CP] Check Pods Manifest.lock */ = {
+		131D58EF0A436602C2841673 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MoodSwings-checkManifestLockResult.txt",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AE1F848F162EC79C701E0C5B /* [CP] Copy Pods Resources */ = {
+		5EB695C48D4FA56BFE985328 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwingsTests/Pods-MoodSwingsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68D9E8542D1DC9D9A2B94430 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -342,7 +383,40 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D04FBA1813A37619C46C88D7 /* [CP] Embed Pods Frameworks */ = {
+		6BE4A625269086D42CA3C020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodSwingsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8517EC7469464C283BE4A2F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwingsUITests/Pods-MoodSwingsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA6443891DE000DE1CEB2CBA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -354,7 +428,58 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwings/Pods-MoodSwings-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwingsUITests/Pods-MoodSwingsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCA9F8FB379E62A2C81E9284 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodSwingsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDB7F78DF48C422923FA9549 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodSwings-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFD625AA86AE424C842F36A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoodSwingsTests/Pods-MoodSwingsTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -512,11 +637,11 @@
 		};
 		811BD87E1EE37CC900774BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EDA4BA801925123BC196709 /* Pods-MoodSwings.debug.xcconfig */;
+			baseConfigurationReference = 116A2928CFB5DEA5BCE86FBA /* Pods-MoodSwings.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"FRAMEWORK_SEARCH_PATHS[arch=*]" = /Users/sandeephasrajani/Documents/FacebookSDK;
 				INFOPLIST_FILE = MoodSwings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoseEmotions.MoodSwings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,10 +651,12 @@
 		};
 		811BD87F1EE37CC900774BEA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AB272499D09181283BC8E09E /* Pods-MoodSwings.release.xcconfig */;
+			baseConfigurationReference = 4F8A4D9A02D1853E8A0BE2C7 /* Pods-MoodSwings.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = MoodSwings/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ThoseEmotions.MoodSwings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -539,6 +666,7 @@
 		};
 		811BD8811EE37CC900774BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F31BBD06D6D38B1C7C6191B8 /* Pods-MoodSwingsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -553,6 +681,7 @@
 		};
 		811BD8821EE37CC900774BEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1054CC6CD3049B117FCFFA /* Pods-MoodSwingsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -567,6 +696,7 @@
 		};
 		811BD8841EE37CC900774BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8846F7E78C7EED6388A7A74C /* Pods-MoodSwingsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MoodSwingsUITests/Info.plist;
@@ -580,6 +710,7 @@
 		};
 		811BD8851EE37CC900774BEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB80842CBC0C43234E3DCC0 /* Pods-MoodSwingsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = MoodSwingsUITests/Info.plist;
